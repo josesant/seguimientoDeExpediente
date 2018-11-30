@@ -1,6 +1,23 @@
 ﻿Public Class Persona
-
+    Private nombre As String
+    Private apellido As String
+    Dim dni As Integer
+    Private domicilio As String
+    Private telefono As String
     Private mail As String
+    Private tipo As Boolean
+
+    Public Sub New(nombre As String, apellido As String, dni As Integer, domicilio As String, telefono As Integer, mail As String, tipo As Boolean)
+        Me.nombre = nombre
+        Me.apellido = apellido
+        Me.dni = dni
+        Me.domicilio = domicilio
+        Me.telefono = telefono
+        Me.mail = mail
+        Me.tipo = tipo
+    End Sub
+
+
     Public Property NewProperty() As String
         Get
             Return mail
@@ -10,8 +27,6 @@
         End Set
     End Property
 
-
-    Private telefono As String
     Public Property ptelefono() As String
         Get
             Return telefono
@@ -20,7 +35,7 @@
             telefono = value
         End Set
     End Property
-    Private nombre As String
+
     Public Property pnombre() As String
         Get
             Return nombre
@@ -30,7 +45,7 @@
         End Set
     End Property
 
-    Private apellido As String
+
     Public Property papellido() As String
         Get
             Return apellido
@@ -40,7 +55,6 @@
         End Set
     End Property
 
-    Private dni As String
     Public Property pdni() As Integer
         Get
             Return dni
@@ -50,7 +64,7 @@
         End Set
     End Property
 
-    Private domicilio As String
+
     Public Property pdomicilio() As String
         Get
             Return domicilio
@@ -59,6 +73,17 @@
             domicilio = value
         End Set
     End Property
+
+
+    Public Property ptipo() As Boolean
+        Get
+            Return tipo
+        End Get
+        Set(ByVal value As Boolean)
+            tipo = value
+        End Set
+    End Property
+
 
 
 End Class

@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "logica", "logica", "{800CCC5B-090F-4A93-ACEB-07A748F62C9E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{AF3BF9C2-DD8D-4ACC-B6F7-61F962FF1922}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Entidas", "Entidas\Entidas.vbproj", "{5587B9F1-5D7B-4FAC-862F-835C92484A8C}"
 EndProject
 Global

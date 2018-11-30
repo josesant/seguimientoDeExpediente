@@ -63,6 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asuntos.vb" />
     <Compile Include="Causante.vb" />
     <Compile Include="Empleado.vb" />
     <Compile Include="Expediente.vb" />
