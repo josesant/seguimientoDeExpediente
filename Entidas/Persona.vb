@@ -5,16 +5,15 @@
     Private domicilio As String
     Private telefono As String
     Private mail As String
-    Private tipo As Boolean
+    Private fechaNac As Date
 
-    Public Sub New(nombre As String, apellido As String, dni As Integer, domicilio As String, telefono As Integer, mail As String, tipo As Boolean)
+    Public Sub New(nombre As String, apellido As String, dni As Integer, domicilio As String, telefono As Integer, mail As String, fechaNac As Date)
         Me.nombre = nombre
         Me.apellido = apellido
         Me.dni = dni
         Me.domicilio = domicilio
         Me.telefono = telefono
         Me.mail = mail
-        Me.tipo = tipo
     End Sub
 
 
@@ -75,15 +74,14 @@
     End Property
 
 
-    Public Property ptipo() As Boolean
+    Public Property pfechaNac() As Date
         Get
-            Return tipo
+            Return fechaNac
         End Get
-        Set(ByVal value As Boolean)
-            tipo = value
+        Set(ByVal value As Date)
+            fechaNac = value
         End Set
     End Property
-
 
 
 End Class
