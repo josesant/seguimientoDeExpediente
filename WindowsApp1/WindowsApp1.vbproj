@@ -208,5 +208,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\conexion\conexion.vbproj">
+      <Project>{ad8b52b8-f33e-4b9c-9a18-ce27bef46b8f}</Project>
+      <Name>conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidas\Entidas.vbproj">
+      <Project>{5587b9f1-5d7b-4fac-862f-835c92484a8c}</Project>
+      <Name>Entidas</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
