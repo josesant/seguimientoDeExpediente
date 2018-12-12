@@ -1,0 +1,27 @@
+﻿<Window x:Name="frm_principal" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Seguimiento de Expediente" Height="405" Width="500">
+    <Grid OpacityMask="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" ClipToBounds="True" SnapsToDevicePixels="True" Focusable="True" IsHitTestVisible="False">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF7B89CB" Offset="0.243"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txt_dni" HorizontalAlignment="Left" Margin="140,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="152" ForceCursor="True" ClipToBounds="True" SnapsToDevicePixels="True" Text="DNI" FontSize="20"/>
+        <TextBlock x:Name="txt_contrasenia" HorizontalAlignment="Left" Margin="140,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="152" Text="Contraseña" FontSize="20"/>
+        <Button x:Name="btn_ingresar" Content="Ingresar" HorizontalAlignment="Left" Margin="201,232,0,0" VerticalAlignment="Top" Width="75" Height="20"/>
+        <Button Content="Crear nuevo usuario" HorizontalAlignment="Left" Margin="182,278,0,0" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Label x:Name="lbl_titulo" Content="Seguimiento de Expediente" HorizontalAlignment="Left" Margin="22,22,0,0" VerticalAlignment="Top" FontSize="36"/>
+
+    </Grid>
+</Window>
