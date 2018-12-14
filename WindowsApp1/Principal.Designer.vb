@@ -27,6 +27,7 @@ Partial Class frm_principal
         Me.btn_mesa = New System.Windows.Forms.Button()
         Me.btn_admin = New System.Windows.Forms.Button()
         Me.btn_normal = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_oficina
@@ -69,12 +70,22 @@ Partial Class frm_principal
         Me.btn_normal.Text = "Usuario Normal"
         Me.btn_normal.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(119, 282)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(153, 125)
+        Me.Button1.TabIndex = 4
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frm_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(405, 313)
+        Me.ClientSize = New System.Drawing.Size(399, 408)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_normal)
         Me.Controls.Add(Me.btn_admin)
         Me.Controls.Add(Me.btn_mesa)
@@ -89,4 +100,5 @@ Partial Class frm_principal
     Friend WithEvents btn_mesa As Button
     Friend WithEvents btn_admin As Button
     Friend WithEvents btn_normal As Button
+    Friend WithEvents Button1 As Button
 End Class

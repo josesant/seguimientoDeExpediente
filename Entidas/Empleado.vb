@@ -6,8 +6,8 @@ Public Class Empleado
     Dim nroLegajo As Integer
     Dim oficina As Oficinas
 
-    Public Sub New(nombre As String, apellido As String, dni As Integer, domicilio As String, telefono As Integer, mail As String, tipo As Boolean, nroLegajo As Integer, oficina As Oficinas)
-        MyBase.New(nombre, apellido, dni, domicilio, telefono, mail, tipo)
+    Public Sub New(nombre As String, apellido As String, dni As Integer, domicilio As String, telefono As Integer, mail As String, fechaNac As Date, nroLegajo As Integer, oficina As Oficinas)
+        MyBase.New(nombre, apellido, dni, domicilio, telefono, mail, fechaNac)
         Me.nroLegajo = nroLegajo
         Me.oficina = oficina
     End Sub
@@ -23,3 +23,4 @@ Public Class Empleado
     End Property
 
 End Class
+

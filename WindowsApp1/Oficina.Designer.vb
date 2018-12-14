@@ -99,7 +99,7 @@ Partial Class frm_oficina
         '
         'btn_agregar
         '
-        Me.btn_agregar.BackColor = System.Drawing.Color.LawnGreen
+        Me.btn_agregar.BackColor = System.Drawing.Color.PaleGreen
         Me.btn_agregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_agregar.Location = New System.Drawing.Point(228, 264)
         Me.btn_agregar.Name = "btn_agregar"
